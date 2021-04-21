@@ -17,6 +17,8 @@ import { NavbarinexComponent } from './shared/navbarinex/navbarinex.component';
 import { GuestComponent } from './layouts/guest/guest.component';
 import { CalculadoraComponent } from './calculadora/calculadora.component';
 
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+
 @NgModule({
   imports: [
     BrowserAnimationsModule,
@@ -26,7 +28,8 @@ import { CalculadoraComponent } from './calculadora/calculadora.component';
     NavbarModule,
     FooterModule,
     SidebarModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MDBBootstrapModule.forRoot()
   ],
   declarations: [
     AppComponent,
